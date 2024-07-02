@@ -1,0 +1,102 @@
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: aquamarine;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        background-color: darkgray;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 5px, 5px, 10px;
+    }
+    
+    h1 {
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .task-input,
+    .task-filter {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .task-input input {
+        width: 70px;
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px;
+        border-radius: 4px;
+    }
+    
+    .task-input button,
+    .task-filter button {
+        padding: 10px, 20px;
+        border: none;
+        background-color: rgb(251, 245, 245);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .task-filter button button {
+        margin-right: 5x;
+    }
+    
+    .task-filter button:hover,
+    .task-input button:hover {
+        background-color: burlywood;
+    }
+    
+    #task-list {
+        list-style-type: none;
+        padding: 0px;
+    }
+    
+    #task-list li {
+        padding: 10px;
+        border: 1px;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .task-actions button {
+        margin-left: 5px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .task-actions .edit-btn {
+        background-color: #ffc107;
+        color: white;
+    }
+    
+    .task-actions .delete-btn {
+        background-color: #dc3545;
+        color: white;
+    }
+    
+    .task-actions .complete-btn {
+        background-color: #28a745;
+        color: white;
+    }
+    
+    .task-actions button:hover {
+        opacity: 0.8;
+    }
+    
+    .completed {
+        text-decoration: line-through;
+        color: gray;
+    }
